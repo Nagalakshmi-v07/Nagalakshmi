@@ -3,39 +3,166 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Home</title>
+<title>Nagalakshmi Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
 <nav>
-    <div class="logo">Nagalakshmi V</div>
-    <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+<div class="logo">Nagalakshmi V</div>
+<div class="menu-icon" onclick="toggleMenu()">
+<i class="fas fa-bars"></i>
+</div>
 </nav>
 
 <div class="side-menu" id="sideMenu">
-    <a href="index.html" onclick="toggleMenu()"><i class="fas fa-home"></i> Home</a>
-    <a href="about.html" onclick="toggleMenu()"><i class="fas fa-user"></i> About</a>
-    <a href="skills.html" onclick="toggleMenu()"><i class="fas fa-lightbulb"></i> Skills</a>
-    <a href="internship.html" onclick="toggleMenu()"><i class="fas fa-briefcase"></i> Internship</a>
-    <a href="certificates.html" onclick="toggleMenu()"><i class="fas fa-certificate"></i> Certificates</a>
-    <a href="contact.html" onclick="toggleMenu()"><i class="fas fa-envelope"></i> Contact</a>
+
+<a href="#home" onclick="toggleMenu()">
+<i class="fas fa-home"></i> Home
+</a>
+
+<a href="#about" onclick="toggleMenu()">
+<i class="fas fa-user"></i> About
+</a>
+
+<a href="#skills" onclick="toggleMenu()">
+<i class="fas fa-lightbulb"></i> Skills
+</a>
+
+<a href="#internship" onclick="toggleMenu()">
+<i class="fas fa-briefcase"></i> Internship
+</a>
+
+<a href="#certificates" onclick="toggleMenu()">
+<i class="fas fa-certificate"></i> Certificates
+</a>
+
+<a href="#contact" onclick="toggleMenu()">
+<i class="fas fa-envelope"></i> Contact
+</a>
+
 </div>
 
-<section class="hero slide-left">
-    <div class="hero-container">
-        <div class="hero-text">
-            <h1>Nagalakshmi V</h1><br><br>
-            <h3><i class="fas fa-code"></i> Beginner Full Stack Developer</h3><br>
-            <p>B.Tech IT-Third Year Aspiring web Development.</p>
-        </div>
-        <div class="profile">
-            <img src="1af99d15-d7fd-4436-af6f-2e58a2294b1f.jpg" alt="Nagalakshi v">
-        </div>
-    </div>
+
+<!-- HOME -->
+
+<section id="home" class="section hero slide-left">
+
+<div class="hero-container">
+
+<div class="hero-text">
+<h1>Nagalakshmi V</h1>
+<h3>Beginner Full Stack Developer</h3>
+<p>B.Tech IT – Third Year<br>
+Aspiring Web Developer</p>
+</div>
+
+<div class="profile">
+<img src="1af99d15-d7fd-4436-af6f-2e58a2294b1f.jpg" alt="Nagalakshmi">
+</div>
+
+</div>
+
 </section>
 
+
+<!-- ABOUT -->
+
+<section id="about" class="section slide-right">
+
+<h2>About Me</h2>
+
+<div class="card">
+
+<p>
+I am a beginner web developer learning HTML and CSS.
+I enjoy creating simple and clean web pages.
+I am practicing daily to improve my skills.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills" class="section slide-left">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Responsive Design</span>
+<span>GitHub</span>
+<span>Figma</span>
+
+</div>
+
+</section>
+
+
+<!-- INTERNSHIP -->
+
+<section id="internship" class="section slide-right">
+
+<h2>Internship</h2>
+
+<div class="card">
+
+<h3>Astro Web Solution</h3>
+<p>June 2025 – July 2025</p>
+<p>Developed responsive web pages</p>
+<p>Assisted in debugging applications</p>
+
+</div>
+
+</section>
+
+
+<!-- CERTIFICATES -->
+
+<section id="certificates" class="section slide-up">
+
+<h2>Certificates</h2>
+
+<div class="card">
+<p>IOT System Design using Arduino and Raspberry Pi</p>
+</div>
+
+<div class="card">
+<p>PenmAI – Thiagarajar School of Management</p>
+</div>
+
+<div class="card">
+<p>Python for Data Science – NPTEL</p>
+<p>cloud computing-NPTEL</p>
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="section slide-up">
+
+<h2>Contact</h2>
+
+<div class="card">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:nagalakshmi072006@gmail.com">nagalakshmi072006@gmail.com</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/nagalakshmi-v-1b2575371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/Nagalakshmi-v07" target="_blank">GitHub</a></p>
+    </div>
+</section>
 <script src="script.js"></script>
+
 </body>
 </html>
