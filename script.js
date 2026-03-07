@@ -1,19 +1,39 @@
 function toggleMenu(){
-    const menu = document.getElementById("sideMenu");
-    menu.classList.toggle("active");
-    document.body.classList.toggle("no-scroll");
+
+const nav = document.querySelector(".nav-links");
+const icon = document.getElementById("menuIcon");
+
+nav.classList.toggle("active");
+
+if(nav.classList.contains("active")){
+icon.classList.remove("fa-bars");
+icon.classList.add("fa-times");
+}
+else{
+icon.classList.remove("fa-times");
+icon.classList.add("fa-bars");
 }
 
-// Reveal animations for slide elements
+}
+
+/* SCROLL ANIMATION */
+
 const slides = document.querySelectorAll(".slide-left, .slide-right, .slide-up");
 
 function revealSlide(){
-    slides.forEach(slide => {
-        const rect = slide.getBoundingClientRect();
-        if(rect.top < window.innerHeight && rect.bottom > 0){
-            slide.classList.add("show");
-        }
-    });
+
+slides.forEach(slide => {
+
+const rect = slide.getBoundingClientRect();
+
+if(rect.top < window.innerHeight && rect.bottom > 0){
+
+slide.classList.add("show");
+
+}
+
+});
+
 }
 
 window.addEventListener("scroll", revealSlide);
