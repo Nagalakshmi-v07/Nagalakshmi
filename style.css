@@ -159,6 +159,9 @@ transform:translateY(60px);
 opacity:1;
 transform:translate(0);
 }
+.close-btn{
+    display: none;
+}
 
 /* MOBILE */
 
@@ -195,5 +198,14 @@ right:0;
 
 .menu-icon{
 display:block;
+}
+.close-btn{
+    display:block;
+    position: absolute;
+    top:20px;
+    right:20px;
+    font-size:28px;
+    color:white;
+    cursor:pointer;
 }
 }
